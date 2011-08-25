@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Welcome to CHECKPOINT!</string>
+    <string name="app_name">CheckPoint</string>
+    <string name="buttonCheck">Click to Verify Identity</string>
+    <string name="identityOk">You are who you say you are... or you stole their finger. </string>
+    <string name="identityBad">You are NOT who you say you are...</string>
+    <string name="identityAssumed">No fingerprint reader set up. Assuming you are who you say you are...</string>
+</resources>
