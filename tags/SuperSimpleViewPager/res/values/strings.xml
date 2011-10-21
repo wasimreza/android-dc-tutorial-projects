@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Super Simple ViewPager Example</string>
+
+	<string name="right_text">RIGHTY RHINO.</string>
+	<string name="middle_text">MONKEY IN THE MIDDLE.</string>
+	<string name="left_text">LEFTY LION.</string>
+
+
+
+</resources>
