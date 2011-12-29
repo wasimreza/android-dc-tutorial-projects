@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mamlambo.livewallpaper.stars"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="11" />
+
+    <uses-feature android:name="android.software.live_wallpaper" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".StarsLiveWallpaperActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:label="@string/wallpaper_name"
+            android:name="com.mamlambo.livewallpaper.stars.StarsWallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER" >
+            <intent-filter >
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/stars_wallpaper" />
+        </service>
+        <service
+            android:label="@string/wallpaper_galaxy"
+            android:name="com.android.wallpaper.galaxy.GalaxyWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER" >
+            <intent-filter >
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/galaxy" />
+        </service>
+    </application>
+
+</manifest>
